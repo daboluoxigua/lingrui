@@ -1,0 +1,178 @@
+@use "./themes.scss";
+@use "./element-plus/index.scss";
+@import "//at.alicdn.com/t/c/font_4055318_39o2ucap1nl.css";
+
+// 全局变量
+:root {
+  // 头部宽度（默认自适应宽度，可固定宽度，固定宽度后为居中显示）
+  --g-header-width: 100%;
+  // 头部高度
+  --g-header-height: 48px;
+  // 侧边栏宽度
+  --g-main-sidebar-width: 70px;
+  --g-sub-sidebar-width: 200px;
+  // 侧边栏Logo高度
+  --g-sidebar-logo-height: 50px;
+  // 顶栏高度
+  --g-topbar-height: 32px;
+}
+// 全局样式
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0 0 0 / 40%);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+// 右侧内容区针对fixed元素，有横向铺满的需求，可在fixed元素上设置 [data-fixed-calc-width]
+[data-fixed-calc-width] {
+  position: fixed;
+  left: 50%;
+  right: 0;
+  width: calc(100% - var(--g-main-sidebar-actual-width) - var(--g-sub-sidebar-actual-width));
+  transform: translateX(-50%) translateX(calc(var(--g-main-sidebar-actual-width) / 2)) translateX(calc(var(--g-sub-sidebar-actual-width) / 2));
+}
+
+[data-mode="mobile"] {
+  [data-fixed-calc-width] {
+    width: 100% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+.el-form-item__label {
+  padding-right: 7px;
+  color: var(--g-el-text-color);
+}
+// textarea 字体跟随系统
+textarea {
+  font-family: inherit;
+}
+
+.el-select,
+.el-cascader {
+  width: 100%;
+}
+// 列表页全局样式
+.el-table.list-table {
+  margin: 20px 0;
+
+  .el-button + .el-dropdown {
+    margin-left: 10px;
+  }
+}
+
+// 弹窗样式
+.el-dialog__header {
+  border-bottom: 1px solid var(--g-border-color);
+  padding: 12px 24px;
+  margin-right: 0;
+}
+
+.el-dialog__headerbtn {
+  top: 0;
+  height: 48px;
+  width: 58px;
+}
+
+.el-dialog__footer {
+  border-top: 1px solid var(--g-border-color);
+  padding: 0 24px;
+  height: 46px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.el-dialog__body {
+  padding: 24px 24px 8px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.el-dialog__title,
+.el-drawer__title {
+  font-size: 14px;
+  color: var(--g-el-text-color);
+}
+
+.el-form-item--small {
+  margin-bottom: 16px;
+}
+
+.table-btn-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .divider {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #ebeef5;
+  }
+
+  .el-button + .divider {
+    margin: 0 4px;
+  }
+}
+
+:focus-visible {
+  outline: 0;
+}
+
+.el-drawer__header {
+  border-bottom: 1px solid var(--g-border-color);
+  height: 48px;
+  padding-top: 0;
+  font-size: 14px;
+  color: var(--g-el-text-color);
+  margin-bottom: 0;
+}
+
+.el-drawer__body {
+  padding: 24px 24px 8px;
+}
+
+.el-drawer__footer {
+  height: 45px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid var(--g-border-color);
+}

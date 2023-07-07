@@ -1,0 +1,60 @@
+commit 748b91174fc8d07edeb068eafcd9c73063c9e3b5
+Author: daboluoxigua <369632586@qq.com>
+Date:   Tue May 23 13:47:50 2023 +0800
+
+    ci
+
+commit 639e446161dd6fa2d5d4335bdd0e91ff53a1f096
+Author: daboluoxigua <369632586@qq.com>
+Date:   Fri May 19 18:14:20 2023 +0800
+
+    ci
+
+commit 5c84677427dccc41ea0f46394e43ebeab05be15d
+Author: daboluoxigua <369632586@qq.com>
+Date:   Fri May 19 10:08:19 2023 +0800
+
+    ci
+
+commit 8c69b4df06aaafc5f7f97aa8a26e2eceb96d5cc0
+Author: daboluoxigua <369632586@qq.com>
+Date:   Wed May 17 18:09:14 2023 +0800
+
+    ci
+
+commit c877665581412363d958ba783cbe8a55db5cd07c
+Author: daboluoxigua <369632586@qq.com>
+Date:   Wed May 17 16:17:47 2023 +0800
+
+    ci
+
+commit 053d29b1315b4d76608d4309c2815197bd3e97ba
+Author: daboluoxigua <369632586@qq.com>
+Date:   Wed May 17 15:55:09 2023 +0800
+
+    ci
+
+commit 684b15833ee4631b0844deb4174b4540db7abf83
+Author: daboluoxigua <369632586@qq.com>
+Date:   Wed May 17 15:03:13 2023 +0800
+
+    ci
+
+commit 001ee05117f6fc12311e4c72ac62709a9396a835
+Merge: e2fa8cf 67463d3
+Author: daboluoxigua <369632586@qq.com>
+Date:   Mon May 15 09:55:25 2023 +0800
+
+    Merge branch 'master' of http://gitlab.macro.com/lingrui-frontend/lingrui-tenant-service-sys
+
+commit 67463d34ebf74cafe491c1d3ae3297b02d6f573f
+Author: 陈 宇 <369632586@qq.com>
+Date:   Mon May 15 09:39:16 2023 +0000
+
+    Initial commit
+
+commit e2fa8cf9e791d0688a75d33a15e7a675e4667431
+Author: daboluoxigua <369632586@qq.com>
+Date:   Mon May 15 09:54:01 2023 +0800
+
+    init
